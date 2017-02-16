@@ -73,14 +73,17 @@ button {
 }
 
 /*=======JUMBOTRON=======*/
+
 .jumbotron {
-  height: 450px;
+  height: 730px;
   color: #fff;
   margin-top: 40px;
   padding-bottom: 30px;
   background-image: url('../img/workspace.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: right;
+  background-color: rgba(0,0,0,.6);
+  background-blend-mode: multiply;
 }
 
 .jumbotron>.container {
@@ -89,13 +92,25 @@ button {
   text-shadow: 1px 1px #333;
 }
 
+.jumbotron>.container>h1 {
+  position: relative;
+  top: 100px;
+}
+
 .jumbotron>.container>h3 {
   padding-bottom: 35px;
+  position: relative;
+  top: 150px;
 }
 
 .jumbotron>.container>button {
   margin-top: 60px;
+  position: relative;
+}
 
+#button-move {
+  position: relative;
+  top: 200px;
 }
 
 .jumbotron>.glyphicon {
@@ -104,6 +119,8 @@ button {
   margin-right: auto;
   text-align: center;
   padding-top: 70px;
+  position: relative;
+  top: 200px;
 }
 
 /*=======PROFILE=======*/
@@ -135,7 +152,7 @@ button {
 }
 
 .page-break {
-  border-top: 1px solid rgba(2, 90, 145, .2);
+  border-top: 1px solid rgba(2, 90, 145, .3);
   padding: 45px;
 }
 
@@ -216,7 +233,7 @@ address {
 /*=======MEDIA QUERIES=======*/
 
 @media only screen (max-width: 600px) {
-  .col-md-8 .col-md-offset-2 {
-    width: 33%;
+  .page-break {
+    color: #000;
   }
 }
