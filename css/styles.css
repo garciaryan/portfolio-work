@@ -145,6 +145,15 @@ button {
   font-size: 50px;
 }
 
+#link {
+  color: #777;
+  text-decoration: none;
+}
+
+#link:hover {
+  color: #000;
+}
+
 /*=======PROJECTS=======*/
 
 .container-fluid .page-break {
@@ -232,7 +241,7 @@ address {
 
 /*=======MEDIA QUERIES=======*/
 
-@media only screen (max-width: 600px) {
+@media only screen (min-width: 480px) {
   .page-break {
     color: #000;
   }
