@@ -44,6 +44,10 @@ button {
   border: none;
 }
 
+.container:focus, .container-fluid:focus {
+  outline: none;
+}
+
 /*=======HEADER=======*/
 
 .navbar {
