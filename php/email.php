@@ -38,6 +38,6 @@
 
 <?php
   }
-  header("Location: http://localhost"); /* Redirect browser */
+  header("Location: https://garciaryan.github.io/portfolio-work/"); /* Redirect browser */
   exit();
 ?>
