@@ -213,6 +213,18 @@ form {
   padding-top: 16px;
 }
 
+#email, #message {
+  width: 60%;
+  position: relative;
+  left: 19px;
+}
+
+.form-group {
+  position: relative;
+  right: 15px;
+}
+
+
 
 /*=======FOOTER=======*/
 
