@@ -208,6 +208,11 @@ form {
   margin-bottom: 75px;
 }
 
+#contact_form {
+  position: relative;
+  right: 6px;
+}
+
 #contact-fine-print {
   color: rgba(0, 0, 0, .2);
   padding-top: 16px;
