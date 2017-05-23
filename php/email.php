@@ -11,7 +11,7 @@
   mail($admin_email, $message, "From:" . $email);
 
   //Email response
-  echo "Thank you for contacting us!";
+  echo "Thanks for reaching out. I'll get back to you as soon as I can!";
   }
 
   //if "email" variable is not filled out, display the form
