@@ -117,6 +117,17 @@ button {
   top: 200px;
 }
 
+.arrow {
+  position: relative;
+  color: #fff;
+  left: 630px;
+  top: 300px;
+}
+
+.arrow:hover {
+  color: #6eddc2;
+}
+
 .jumbotron>.glyphicon {
   display: block;
   margin-left: auto;
