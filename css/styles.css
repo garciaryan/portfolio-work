@@ -236,6 +236,8 @@ textarea#message.input {
 
 label#email {
   display: block;
+  width: 100%;
+  text-align: center;
 }
 
 input#email.input {
