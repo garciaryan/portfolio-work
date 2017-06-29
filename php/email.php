@@ -11,7 +11,7 @@
   mail($admin_email, $message, "From:" . $email);
 
   //Email response
-  echo "Thank you for contacting us!";
+  echo "Thanks for reaching out. I'll get back to you as soon as I can!";
   }
 
   //if "email" variable is not filled out, display the form
@@ -19,19 +19,25 @@
 ?>
 
 <form id="contact_form" action="php/email.php" method="POST" enctype="multipart/form-data">
-  <div class="row">
-    <label for="email">Email:</label><br>
-    <input id="email" class="input" name="email" type="text" value="" size="30"><br><br>
+  <div class="form-group">
+  <label for="email" id="email">Email: <span>*</span></label>
+  <input type="email" class="input" name="email" placeholder="Email" id="email">
   </div>
-  <div class="row">
-    <label for="message">Message:</label><br>
-    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br><br>
+  <div class="form-group">
+    <label for="message" id="message">Message: <span>*</span></label>
+      <textarea class="input" id="message" name="message" placeholder="Tell me about yourself and the project you'd like to work on!" rows="5"></textarea>
   </div>
-  <input class="btn btn-default" type="submit" value="Submit">
+  <div class="checkbox">
+  <label>
+    <input type="checkbox"> I'm not a robot
+  </label>
+  </div>
+  <input type="submit" class="btn btn-default center-block"></input>
+  <p class="center-text" id="contact-fine-print">All fields marked <span>*</span> are mandatory</p>
 </form>
 
 <?php
   }
-  header("Location: http://localhost"); /* Redirect browser */
+  header("Location: https://garciaryan.github.io/portfolio-work/"); /* Redirect browser */
   exit();
 ?>
