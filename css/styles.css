@@ -44,6 +44,10 @@ button {
   border: none;
 }
 
+.container:focus, .container-fluid:focus {
+  outline: none;
+}
+
 /*=======HEADER=======*/
 
 .navbar {
@@ -204,10 +208,27 @@ form {
   margin-bottom: 75px;
 }
 
+#contact_form {
+  position: relative;
+  right: 6px;
+}
+
 #contact-fine-print {
   color: rgba(0, 0, 0, .2);
   padding-top: 16px;
 }
+
+#email, #message {
+  width: 60%;
+  position: relative;
+  left: 19px;
+}
+
+.form-group {
+  position: relative;
+  right: 15px;
+}
+
 
 
 /*=======FOOTER=======*/
@@ -221,6 +242,7 @@ form {
   font-size: 54px;
   text-align: center;
   padding-top: 20px;
+  padding-left: 31px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -235,7 +257,6 @@ address {
 
 #copyright {
   text-align: center;
-  /*padding-top: px;*/
   color: rgba(0, 0, 0, .2)
 }
 
