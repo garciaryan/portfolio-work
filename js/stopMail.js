@@ -1,15 +1,14 @@
-$(document).ready(function (){
-    validate();
-    $('#email, #message').change(validate);
-});
+$(':input[type=submit]').prop('disabled', true);
 
-function validate(){
-    if (
-        $('#email').val().length  >   0   &&
-        $('#message').val().length    >   0) {
-        $("input[type=submit]").prop("disabled", false);
+$(function (){
+  $('.input').keyup(function (){
+    console.log('Im all keyed up');
+    if ($('.input').val().length >= 1){
+      console.log($('.input').val().length);
+      $(':input[type=submit]').prop('disabled', false);
     }
     else {
-        $("input[type=submit]").prop("disabled", true);
+      $(':input[type=submit]').prop('disabled', true);
     }
-}
+  });
+});

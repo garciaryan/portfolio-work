@@ -14,5 +14,5 @@ $("#contact_form").submit(function(e) {
            }
          });
 
-    e.preventDefault(); // avoid to execute the actual submit of the form.
+    //e.preventDefault(); // avoid to execute the actual submit of the form.
 });

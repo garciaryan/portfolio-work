@@ -1,3 +1,4 @@
+
 <?php
 //if "email" variable is filled out, send email
   if (isset($_REQUEST['email']))  {
@@ -32,12 +33,12 @@
     <input type="checkbox"> I'm not a robot
   </label>
   </div>
-  <input type="submit" class="btn btn-default center-block"></input>
+  <input type="submit" class="submit-btn btn-default center-block"></input>
   <p class="center-text" id="contact-fine-print">All fields marked <span>*</span> are mandatory</p>
 </form>
 
 <?php
   }
-  header("Location: https://garciaryan.github.io/portfolio-work/"); /* Redirect browser */
+  header("Location: rgarciadev.com"); /* Redirect browser */
   exit();
 ?>
