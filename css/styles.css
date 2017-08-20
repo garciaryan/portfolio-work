@@ -79,9 +79,11 @@ button {
 /*=======JUMBOTRON=======*/
 
 .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 730px;
   color: #fff;
-  margin-top: 40px;
   padding-bottom: 30px;
   background-image: url('../img/workspace.jpg');
   background-size: cover;
@@ -117,8 +119,18 @@ button {
   top: 200px;
 }
 
+.arrow {
+  align-self: center;
+  margin-top: auto;
+  color: #fff;
+}
+
+.arrow:hover {
+  color: #6eddc2;
+}
+
 .jumbotron>.glyphicon {
-  display: block;
+  /*display: block;*/
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -229,6 +241,21 @@ form {
   right: 15px;
 }
 
+textarea#message.input {
+  height: 6em;
+  width: 90%;
+}
+
+label#email {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+input#email.input {
+  position: relative;
+  width: 90%;
+}
 
 
 /*=======FOOTER=======*/
@@ -265,5 +292,11 @@ address {
 @media only screen (min-width: 480px) {
   .page-break {
     color: #000;
+  }
+}
+
+@media (max-width: 1141px){
+  #profile-pic {
+    transform: scale(.8);
   }
 }
