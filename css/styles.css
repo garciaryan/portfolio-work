@@ -81,7 +81,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 730px;
+  height: 736px;
   color: #fff;
   padding-bottom: 30px;
   background-image: url('../img/workspace.jpg');
@@ -324,5 +324,28 @@ address {
 @media (max-width: 1141px){
   #profile-pic {
     transform: scale(.8);
+  }
+}
+
+@media (max-width: 375px){
+  .jumbotron {
+    height: 667px;
+  }
+}
+
+@media (max-width: 320px){
+  .page-break {
+    padding: 0;
+  }
+  .jumbotron {
+    height: 568px;
+  }
+  .about-me>h1 {
+    text-align: center;
+  }
+  .about-me {
+    text-align: justify;
+    padding-left: 68px;
+    margin: 0 0;
   }
 }
