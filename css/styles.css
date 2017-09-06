@@ -70,7 +70,7 @@ button {
 
 .dropdown-menu {
   min-width: 50px;
-  background-clip: none;
+  /*background-clip: none;*/
   border: none;
   box-shadow: none;
   background-color: rgba(255, 255, 255, .85);
@@ -93,21 +93,49 @@ button {
 }
 
 .jumbotron>.container {
+  margin-top: auto;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   text-shadow: 1px 1px #333;
 }
 
 .jumbotron>.container>h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding-bottom: 30px;
   position: relative;
-  top: 100px;
 }
 
 .jumbotron>.container>h3 {
+  margin-top: auto;
+  padding-top: 35px;
   padding-bottom: 35px;
   position: relative;
-  top: 150px;
 }
+
+/* Typed.js css */
+
+.typed {
+  display: inline;
+}
+
+.typed-cursor{
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+0% { opacity:1; }
+50% { opacity:0; }
+100% { opacity:1; }
+}
+/* Typed.js css ends */
 
 .jumbotron>.container>button {
   margin-top: 60px;
@@ -115,8 +143,10 @@ button {
 }
 
 #button-move {
+  display: flex;
+  padding-top: 70px;
+  justify-content: center;
   position: relative;
-  top: 200px;
 }
 
 .arrow {
@@ -276,7 +306,7 @@ input#email.input {
 }
 
 address {
-  margin: none;
+  margin: 0;
   text-align: center;
   font-size: 12px;
 
@@ -289,7 +319,7 @@ address {
 
 /*=======MEDIA QUERIES=======*/
 
-@media only screen (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .page-break {
     color: #000;
   }

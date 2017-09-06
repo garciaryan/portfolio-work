@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/inspectionProfiles/
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/modules.xml
+.idea/terminal.xml
+.idea/vagrant.xml
+.idea/vcs.xml
+.idea/watcherTasks.xml
+.idea/workspace.xml
+node_modules/
