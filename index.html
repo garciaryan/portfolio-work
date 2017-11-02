@@ -8,6 +8,8 @@
   <title>R. Garcia Web Development and Design</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet/less" type="text/css" href="css/blobl.less">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,10 +24,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">ryangarcia</a>
+          <a class="navbar-brand animated fadeInDown" href="#">ryangarcia</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse pull-right animated fadeInDown" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav" id="navbar">
             <li><a href="#hero-home">home <span class="sr-only">(current)</span></a></li>
             <li><a href="#profile">about</a></li>
@@ -61,11 +63,33 @@
     </div>
     <div class="row pull-right">
       <div class="col-md-4">
-        <img src="img/profile1.jpg" alt="Profile Pic" id="profile-pic">
+        <svg id="organic-blob" width="400" height="400" xmlns="http://www.w3.org/2000/svg" filter="url(#goo)">
+          <defs>
+            <pattern id="profile-img" patternUnits="userSpaceOnUse" width="200" height="200">
+              <image xlink:href="img/profile1.jpg" x="0" y="0" height="200" width="200"></image>
+            </pattern>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+            <path d="M5,50
+         l0,100 l100,0 l0,-100 l-100,0
+         M215,100
+         a50,50 0 1 1 -100,0 50,50 0 1 1 100,0
+         M265,50
+         l50,100 l-100,0 l50,-100
+         z" fill="url(#profile-img)"/>
+          </defs>
+          <circle id="Circle1" fill="url(#profile-img)"></circle>
+          <circle id="Circle2" fill="url(#profile-img)"></circle>
+          <circle id="Circle3" fill="url(#profile-img)"></circle>
+          <circle id="Circle4" fill="url(#profile-img)"></circle>
+        </svg>
       </div>
       <div class="col-md-4 about-me">
         <h1>who i am</h1>
-        <p>my name is ryan. i live and work in Fresno, CA and i am engaged to the most beautiful and supportive woman ever. i am a part-time musician, basketball fanatic, and, of course, a web developer. i love music of all kinds, especially when i can enjoy a good gin and tonic while listening. i love to travel (the pic was actually taken in Prague, Czech Republic).  </p>
+        <p>my name is ryan. i live and work in Fresno, CA and i am married to the most beautiful and supportive woman ever. i am a part-time musician, basketball fanatic, and a web developer. i love music of all kinds, especially when i can enjoy a good gin and tonic while listening. i love to travel (the pic was actually taken in Prague, Czech Republic).  </p>
       </div>
       <div class="col-md-4 about-me">
         <h1>what i do</h1>
@@ -139,7 +163,7 @@
         	    <input type="checkbox"> I'm not a robot
         	  </label>
           </div>
-          <input type="submit" class="submit-btn btn btn-default center-block"></input>
+          <input type="submit" class="submit-btn btn btn-default center-block">
         	<p class="center-text" id="contact-fine-print">All fields marked <span>*</span> are mandatory</p>
         </form>
       </div>
@@ -164,6 +188,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+  <script src="js/less.js"></script>
   <script src="js/typed.js"></script>
   <script src="js/stopMail.js"></script>
   <script src="js/mail.js"></script>

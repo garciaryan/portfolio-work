@@ -177,7 +177,6 @@ button {
   width: 300px;
   height: 400px;
   margin-left: 50px;
-  content: attr(title);
 }
 
 .about-me {
@@ -293,7 +292,7 @@ input#email.input {
 /*=======FOOTER=======*/
 
 .footer {
-  height: 200px;
+  height: auto;
   background-color: #F8F8F8;
 }
 
