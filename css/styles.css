@@ -81,7 +81,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 736px;
+  height: 100vh;
   color: #fff;
   padding-bottom: 30px;
   background-image: url('../img/workspace.jpg');

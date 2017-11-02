@@ -1,12 +1,11 @@
 $(function() {
     $('.typed').typed({
-        strings: ['my name is ryan.', 'i build responsive websites.', 'i build web applications.', 'i build mobile applications.'],
-        typeSpeed: 80,
+        strings: ["I build responsive websites.", "I build web applications.", "I build mobile applications."],
+        typeSpeed: 40,
         smartBackspace: true,
         showCursor: true,
-        backSpeed: 40,
-        backDelay: 3500,
-        loop: true,
-        loopCount: Infinity
+        backSpeed: 20,
+        backDelay: 3000,
+        loop: true
     });
 });
