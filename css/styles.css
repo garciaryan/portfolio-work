@@ -63,11 +63,6 @@ button {
   border-right: transparent solid 1px;
 }
 
-#navbar>li a:hover {
-  border-bottom: solid 1px #000000;
-  border-right: solid 1px #000000;
-}
-
 .dropdown-menu {
   min-width: 25%;
   border: none;
@@ -173,9 +168,9 @@ button {
 
 /*=======PROFILE=======*/
 
-#profile-pic {
-  width: 300px;
-  height: 400px;
+.profile-pic {
+  height: 75%;
+  width: 75%;
   margin-left: 50px;
 }
 
@@ -208,7 +203,7 @@ button {
 }
 
 .page-break {
-  border-top: 1px solid rgba(2, 90, 145, .3);
+  border-top: 1px solid rgba(0, 0, 0, .4);
   padding: 45px;
 }
 
@@ -228,10 +223,6 @@ button {
 
 .thumbnail>img {
   height: 200px;
-}
-
-.project-img {
-  border-radius: 10%;
 }
 
 .caption>h3 {
