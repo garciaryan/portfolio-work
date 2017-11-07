@@ -48,3 +48,10 @@ $('.dropdown').on('show.bs.dropdown', function() {
 $('.dropdown').on('hide.bs.dropdown', function() {
   $(this).find('.dropdown-menu').first().stop(true, true).slideUp('fast');
 });
+
+//Collapse hamburger menu in mobile
+$(document).on('click','.navbar-collapse.in',function(e) {
+  if( $(e.target).is('a') ) {
+    $(this).collapse('hide');
+  }
+});
