@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet/less" type="text/css" href="css/img.less">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("user_zIWNvT8TFOfNLkOUecsFn");
+    })();
+  </script>
 </head>
 <body>
   <header>
@@ -136,11 +142,6 @@
         		<label for="message" id="message">Message: <span>*</span></label>
         			<textarea class="input" id="message" name="message" placeholder="Tell me about yourself and the project you'd like to work on!" rows="5"></textarea>
         	</div>
-          <div class="checkbox">
-        	  <label>
-        	    <input type="checkbox"> I'm not a robot
-        	  </label>
-          </div>
           <input type="submit" class="submit-btn btn btn-default center-block">
         	<p class="center-text" id="contact-fine-print">All fields marked <span>*</span> are mandatory</p>
         </form>
@@ -169,7 +170,6 @@
   <script src="js/less.js"></script>
   <script src="js/typed.js"></script>
   <script src="js/stopMail.js"></script>
-  <script src="js/mail.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
