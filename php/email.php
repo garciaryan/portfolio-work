@@ -33,12 +33,7 @@
         <label for="message" id="message">Message: <span>*</span></label>
           <textarea class="input" id="message" name="message" placeholder="Tell me about yourself and the project you'd like to work on!" rows="5"></textarea>
       </div>
-      <div class="checkbox">
-      <label>
-        <input type="checkbox"> I'm not a robot
-      </label>
-      </div>
-      <input type="submit" class="submit-btn btn-default center-block"></input>
+      <input type="submit" class="submit-btn btn-default center-block">
       <p class="center-text" id="contact-fine-print">All fields marked <span>*</span> are mandatory</p>
     </form>
 

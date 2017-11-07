@@ -1,3 +1,4 @@
+// Prevents user from submitting empty form.
 $(':input[type=submit]').attr('disabled', true);
 
 $(function (){
@@ -10,3 +11,5 @@ $(function (){
     }
   });
 });
+
+emailjs.sendForm('mailgun', 'template_upOEUwrE', 'contact_form');
