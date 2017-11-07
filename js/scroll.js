@@ -1,6 +1,3 @@
-
-
-
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -40,4 +37,14 @@ $('a[href*="#"]')
 //PAGE REFRESH
 $(window).on('beforeunload', function() {
    $(window).scrollTop(0);
+});
+
+//Dropdown animation
+$('.dropdown').on('show.bs.dropdown', function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown('fast');
+});
+
+// Add slideUp animation to Bootstrap dropdown when collapsing.
+$('.dropdown').on('hide.bs.dropdown', function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).slideUp('fast');
 });
