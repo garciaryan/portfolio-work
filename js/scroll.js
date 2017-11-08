@@ -46,7 +46,7 @@ $('.dropdown').on('show.bs.dropdown', function() {
 
 // Add slideUp animation to Bootstrap dropdown when collapsing.
 $('.dropdown').on('hide.bs.dropdown', function() {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideUp('fast');
+  $(this).find('.dropdown-menu').first().stop(true, true).collapse('hide');
 });
 
 //Collapse hamburger menu in mobile

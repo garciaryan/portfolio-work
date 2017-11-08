@@ -38,8 +38,8 @@
     </form>
 
     <?php
-      header( 'Refresh: 5; url=http://rgarciadev.com'); /* Redirect browser */
-      exit;
+      header( 'Refresh: 5; Location: https://rgarciadev.com'); /* Redirect browser */
+      exit();
     }
     ?>
   </body>
